@@ -11,7 +11,8 @@ public class SpringServicesDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringServicesDemoApplication.class, args);
 
-        MusicService musicService = new MusicService();
+		Track track = new JazzTrack("Hymn for the Travelling Souls", "Кетиль Бьёрнстад");
+        MusicService musicService = new MusicService(track);
 
         System.out.println(musicService.play());
     }

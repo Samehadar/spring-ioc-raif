@@ -1,13 +1,13 @@
 package ru.raiffeisen.springservicesdemo.service;
 
-import ru.raiffeisen.springservicesdemo.JazzTrack;
 import ru.raiffeisen.springservicesdemo.Track;
 
 public class MusicService {
 
-    private Track track = new JazzTrack("Hymn for the Travelling Souls", "Кетиль Бьёрнстад");
+    private Track track;
 
-    public MusicService() {
+    public MusicService(Track track) {
+        this.track = track;
     }
 
     public String play() {
