@@ -1,6 +1,6 @@
 package ru.raiffeisen.springservicesdemo;
 
-public class RapTrack implements Track {
+public class JazzTrack implements Track {
 
     private String title;
     private String author;
@@ -13,7 +13,7 @@ public class RapTrack implements Track {
         return author;
     }
 
-    public RapTrack(String title, String author) {
+    public JazzTrack(String title, String author) {
         this.title = title;
         this.author = author;
     }

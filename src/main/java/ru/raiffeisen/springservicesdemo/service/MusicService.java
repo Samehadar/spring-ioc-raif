@@ -1,15 +1,16 @@
 package ru.raiffeisen.springservicesdemo.service;
 
-import ru.raiffeisen.springservicesdemo.RapTrack;
+import ru.raiffeisen.springservicesdemo.JazzTrack;
+import ru.raiffeisen.springservicesdemo.Track;
 
 public class MusicService {
 
-    private RapTrack rapTrack = new RapTrack("Вечный жид", "Оксимирон");
+    private Track track = new JazzTrack("Hymn for the Travelling Souls", "Кетиль Бьёрнстад");
 
     public MusicService() {
     }
 
     public String play() {
-        return String.format("Play %s - %s", rapTrack.getAuthor(), rapTrack.getTitle());
+        return String.format("Play %s - %s", track.getAuthor(), track.getTitle());
     }
 }
