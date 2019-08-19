@@ -15,8 +15,8 @@ public class SpringServicesDemoApplication {
         ConfigurableApplicationContext ctx = SpringApplication.run(SpringServicesDemoApplication.class, args);
 
         Track rapTrack = (Track) ctx.getBean("getTrack");
-        Track jazzTrack = new JazzTrack("Hymn for the Travelling Souls", "Кетиль Бьёрнстад");
-        MusicService musicService = new MusicService(rapTrack);
+
+        MusicService musicService = (MusicService) ctx.getBean("musicService");
 
         System.out.println(musicService.play());
     }
