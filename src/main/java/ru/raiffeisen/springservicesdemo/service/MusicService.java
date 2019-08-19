@@ -1,7 +1,9 @@
 package ru.raiffeisen.springservicesdemo.service;
 
+import org.springframework.stereotype.Service;
 import ru.raiffeisen.springservicesdemo.Track;
 
+@Service
 public class MusicService {
 
     private Track track;
