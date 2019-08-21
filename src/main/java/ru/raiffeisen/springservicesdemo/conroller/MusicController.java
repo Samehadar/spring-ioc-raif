@@ -24,8 +24,6 @@ public class MusicController {
             @RequestParam("author") String author,
             Model model) {
 
-
-
         model.addAttribute("title", title);
         model.addAttribute("author", author);
 
